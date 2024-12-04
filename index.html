@@ -1,48 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surkee | 3D Modeling Portfolio</title>
+    <!-- Include Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>Surkee</h1>
         <p>Welcome to my portfolio! I create high-quality 3D models optimized for games, animations, and more.</p>
     </header>
-    <main>
-        <section id="portfolio">
-            <h2>My Work</h2>
-            <div class="gallery">
-                <!-- Example item -->
-                <div class="gallery-item">
-                    <img src="assets/desk_pack.png" alt="Desk Pack">
-                    <p>A detailed 3D desk model for game environments.</p>
+    <main class="container my-5">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mb-5">
+            <h2 class="text-center text-primary mb-4">My Work</h2>
+            <div class="row">
+                <!-- Example Gallery Item -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="assets/desk_pack.png" class="card-img-top" alt="Desk Pack">
+                        <div class="card-body text-center">
+                            <p class="card-text">A detailed 3D desk model for game environments.</p>
+                        </div>
+                    </div>
                 </div>
                 <!-- Additional items can be added here -->
             </div>
         </section>
+        <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/f/mqaklbyn" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
+            <h2 class="text-center text-primary mb-4">Contact Me</h2>
+            <form action="https://formspree.io/f/mqaklbyn" method="POST" class="mx-auto w-100 w-md-50 p-4 shadow-sm bg-white rounded">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Send Message</button>
             </form>
-            <p>Or email me directly at <a href="mailto:mosescu.bogdan26@gmail.com">mosescu.bogdan26@gmail.com</a></p>
+            <p class="text-center mt-3">Or email me directly at <a href="mailto:mosescu.bogdan26@gmail.com">mosescu.bogdan26@gmail.com</a></p>
         </section>
     </main>
-    <footer>
+    <footer class="bg-primary text-white text-center py-3">
         <p>© 2024 Surkee. All rights reserved.</p>
     </footer>
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
