@@ -78,7 +78,8 @@ main {
 
 form {
     max-width: 600px;
-    margin: 0 auto;
+    width: 100%; /* Ensures responsiveness */
+    margin: 0 auto; /* Centers the form */
     background: #fff;
     padding: 2rem;
     border-radius: 8px;
