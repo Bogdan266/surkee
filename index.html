@@ -1,82 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surkee - 3D Modeler</title>
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        text-align: center;
-    }
-    header {
-        margin-bottom: 2rem;
-    }
-    h1 {
-        font-size: 2.5rem;
-        margin: 0;
-    }
-    p {
-        font-size: 1.2rem;
-        margin: 0.5rem 0 2rem;
-    }
-    form {
-        background: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 400px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    input, textarea, button {
-        width: 100%;
-        margin-bottom: 1rem;
-        padding: 10px;
-        font-size: 1rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-    button {
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-    }
-    button:hover {
-        background-color: #0056b3;
-    }
-    footer {
-        margin-top: 2rem;
-        font-size: 0.9rem;
-    }
-</style>
+    <title>Surkee | 3D Modeling Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Surkee</h1>
-        <p>Professional 3D Modeler</p>
+        <p>Welcome to my portfolio! I create high-quality 3D models optimized for games, animations, and more.</p>
     </header>
-    <form action="https://formspree.io/f/mqaklbyn" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <main>
+        <section id="portfolio">
+            <h2>My Work</h2>
+            <div class="gallery">
+                <!-- Example item -->
+                <div class="gallery-item">
+                    <img src="assets/example-model.jpg" alt="3D Model Example">
+                    <p>A detailed 3D desk model for game environments.</p>
+                </div>
+                <!-- Additional items can be added here -->
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/mqaklbyn" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p>Or email me directly at <a href="mailto:mosescu.bogdan26@gmail.com">mosescu.bogdan26@gmail.com</a></p>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Surkee. All rights reserved.</p>
+        <p>© 2024 Surkee. All rights reserved.</p>
     </footer>
 </body>
 </html>
